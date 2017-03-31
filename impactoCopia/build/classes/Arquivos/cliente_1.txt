@@ -1,0 +1,7 @@
+Id Cliente: 1
+Nome Cliente: Teste
+Email Cliente: teste@teste.com
+Telefone 1 Cliente: teste1
+Telefone 2 Cliente: teste2
+Cidade Cliente: Teste TE
+Endereco Cliente: teste, teste, teste

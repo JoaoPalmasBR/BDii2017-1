@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+String arquivo = new Scanner(new File("/home/joao/NetBeansProjects/Impacto/src/Arquivos/senha.txt")).useDelimiter("\\n").next();
+
+
+altera senha
+//        senhaFinal=tfSenhaNova.getText();
+//        
+//        File dir = new File("/home/joao/NetBeansProjects/Impacto/src/Arquivos");
+//        File arq = new File(dir,"senha.txt");
+//        
+//         try {
+//            arq.createNewFile();
+//
+//            //Devemos passar no construtor do FileWriter qual arquivo
+//            // vamos manipular.
+//            // Esse construtor aceita dois tipos de parâmetros,
+//            // File ou String.
+//            //O parâmetro true indica que reescrevemos no arquivo
+//            // sem apagar o que já existe.
+//            // O false apagaria o conteúdo do arquivo e escreveria
+//            // o novo conteúdo.
+//            // Se não usar o 2° parâmetro, ele por padrão será false.
+//            //O mais importante, essa linha abre o fluxo do arquivo 
+//            FileWriter fileWriter = new FileWriter(arq, false);
+//
+//            //Agora vamos usar a classe PrintWriter para escrever
+//            //fisicamente no arquivo.
+//            //Precisamos passar o objeto FileReader em seu construtor
+//            PrintWriter printWriter = new PrintWriter(fileWriter);
+//
+//            //Agora vamos escrever no arquivo com o método  println(),
+//            // que nos permite escrever linha a linha no arquivo
+//            printWriter.println(senhaFinal);
+//
+//            //o método flush libera a escrita no arquivo
+//            printWriter.flush();
+//
+//            //No final precisamos fechar o arquivo
+//            printWriter.close();
+//         }catch (IOException e) {
+//            e.printStackTrace();
+//        }

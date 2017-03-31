@@ -1,0 +1,12 @@
+tipoVeiculo,modeloVeiculo,marcaVeiculo,corVeiculo,placaVeiculo,renavamVeiculo,VencimentoVeiculo,categoriaVeiculo,observacoesVeiculo
+
+tipoVeiculo
+modeloVeiculo
+marcaVeiculo
+corVeiculo
+placaVeiculo
+renavamVeiculo
+VencimentoVeiculo
+categoriaVeiculo
+observacoesVeiculo
+,v.getTipoVeiculo(),v.getModeloVeiculo(),v.getMarcaVeiculo(),v.getCorVeiculo(),v.getPlacaVeiculo(),v.getRenavamVeiculo(),v.getVencimentoVeiculo(),v.getCategoriaVeiculo(),v.getObservacoesVeiculo()
