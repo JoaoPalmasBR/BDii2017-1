@@ -31,18 +31,19 @@ public class LeitorDao {
         this.connection = new ConnectionFactory().getConnection();
     }
     public void adiciona(Leitor leitor) {
-        String sql = "insert into leitor " +
-            "(nomeLeitor,CPFLeitor,emailLeitor,interesseLeitor,enderecoLeitor,telefoneLeitor)" +
+        String sql = "insert into leitor (nomeLeitor,CPFLeitor,emailLeitor,"
+                + "interesseLeitor,enderecoLeitor,telefoneLeitor)" +
             " values (?,?,?,?,?,?)";
-        try ( // prepared statement para inserção
-                PreparedStatement stmt = connection.prepareStatement(sql)) {
+        try (
+            // prepared statement para inserção
+            PreparedStatement stmt = connection.prepareStatement(sql)) {
             // seta os valores
             stmt.setString(1,leitor.getNomeLeitor());
             stmt.setString(2,leitor.getCPFLeitor());
             stmt.setString(3,leitor.getEmailLeitor());
             stmt.setString(4,leitor.getInteresseLeitor());
-            stmt.setInt(5,enderecos.get(leitor.getEnderecoLeitor().getCodigoEndereco()));
-            stmt.setInt(6,telefones.get(leitor.getTelefoneLeitor().getCodigoTelefone()));
+            stmt.setInt(5,leitor.getEnderecoLeitor().getCodigoEndereco());
+            stmt.setInt(6,leitor.getTelefoneLeitor().getCodigoTelefone());
             // executa
             stmt.execute();
         }
