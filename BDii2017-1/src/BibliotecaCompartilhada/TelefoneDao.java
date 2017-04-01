@@ -22,26 +22,22 @@ import java.sql.SQLException;
  *
  * @author Joao Antonio
  */
-public class LeitorDao {
+public class TelefoneDao {
     // a conexão com o banco de dados
     private Connection connection;
-    public LeitorDao() {
+    public TelefoneDao() {
         this.connection = new ConnectionFactory().getConnection();
     }
-    public void adiciona(Leitor leitor) {
-        String sql = "insert into Leitor (nomeLeitor,CPFLeitor,emailLeitor,"
-                + "interesseLeitor,enderecoLeitor,telefoneLeitor)" +
-            " values (?,?,?,?,?,?)";
+    public void adiciona(Telefone telefone) {
+        String sql = "insert into Telefone (telCelular,telResidencial, telComercial)" +
+            " values (?,?,?,?)";
         try (
             // prepared statement para inserção
             PreparedStatement stmt = connection.prepareStatement(sql)) {
             // seta os valores
-            stmt.setString(1,leitor.getNomeLeitor());
-            stmt.setString(2,leitor.getCPFLeitor());
-            stmt.setString(3,leitor.getEmailLeitor());
-            stmt.setString(4,leitor.getInteresseLeitor());
-            stmt.setInt(5,leitor.getEnderecoLeitor().getCodigoEndereco());
-            stmt.setInt(6,leitor.getTelefoneLeitor().getCodigoTelefone());
+            stmt.setString(1,telefone.getTelCelular());
+            stmt.setString(2,telefone.getTelResidencial());
+            stmt.setString(3,telefone.getTelComercial());
             // executa
             stmt.execute();
         }

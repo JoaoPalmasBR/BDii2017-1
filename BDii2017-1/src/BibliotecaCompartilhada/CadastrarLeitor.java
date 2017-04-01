@@ -334,8 +334,21 @@ public class CadastrarLeitor extends javax.swing.JInternalFrame {
         Endereco endereco = new Endereco();
         Telefone telefone = new Telefone();
         
+        endereco.setRua(tfRua.getText());
+        endereco.setNumero(Integer.parseInt(tfNumero.getText()));
+        endereco.setComplemento(tfComplemento.getText());
+        endereco.setBairro(tfBairro.getText());
+        endereco.setCidade(tfCidade.getText());
+        endereco.setEstado(tfEstado.getText());
+        endereco.setCep(tfCEP.getText());
         
-        //leitor.setNomeLeitor(tfNomeLeitor.getText());
+        telefone.setTelCelular(tfCelular.getText());
+        telefone.setTelResidencial(tfResidencial.getText());
+        telefone.setTelComercial(tfComercial.getText());
+        
+        leitor.setNomeLeitor(tfNomeLeitor.getText());
+        //leitor.setCPFLeitor();
+        
         //leitor.setEmailCliente(tfEmailtfCPFClientet());
         //leitor.setTelefone1Cliente(tfEmailLeitor.getText());
         //leitor.setTelefone2Cliente(tfTelefone2Cliente.getText());

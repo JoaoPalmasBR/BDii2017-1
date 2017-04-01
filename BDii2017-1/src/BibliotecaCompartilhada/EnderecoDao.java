@@ -22,26 +22,26 @@ import java.sql.SQLException;
  *
  * @author Joao Antonio
  */
-public class LeitorDao {
+public class EnderecoDao {
     // a conexão com o banco de dados
     private Connection connection;
-    public LeitorDao() {
+    public EnderecoDao() {
         this.connection = new ConnectionFactory().getConnection();
     }
-    public void adiciona(Leitor leitor) {
-        String sql = "insert into Leitor (nomeLeitor,CPFLeitor,emailLeitor,"
-                + "interesseLeitor,enderecoLeitor,telefoneLeitor)" +
-            " values (?,?,?,?,?,?)";
+    public void adiciona(Endereco endereco) {
+        String sql = "insert into Endereco (rua, numero, complemento, bairro, "
+                + "cidade, estado, cep) values (?,?,?,?,?,?,?)";
         try (
             // prepared statement para inserção
             PreparedStatement stmt = connection.prepareStatement(sql)) {
             // seta os valores
-            stmt.setString(1,leitor.getNomeLeitor());
-            stmt.setString(2,leitor.getCPFLeitor());
-            stmt.setString(3,leitor.getEmailLeitor());
-            stmt.setString(4,leitor.getInteresseLeitor());
-            stmt.setInt(5,leitor.getEnderecoLeitor().getCodigoEndereco());
-            stmt.setInt(6,leitor.getTelefoneLeitor().getCodigoTelefone());
+            stmt.setString(1,endereco.getRua());
+            stmt.setInt(2,endereco.getNumero());
+            stmt.setString(3,endereco.getComplemento());
+            stmt.setString(4,endereco.getBairro());
+            stmt.setString(5,endereco.getCidade());
+            stmt.setString(6,endereco.getEstado());
+            stmt.setString(7,endereco.getCep());
             // executa
             stmt.execute();
         }
