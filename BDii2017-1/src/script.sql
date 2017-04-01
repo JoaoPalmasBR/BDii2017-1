@@ -18,18 +18,18 @@ public class ConnectionFactory {
     }
 }
 BDII2017
-CREATE SCHEMA `BDII2017` ;
 
-CREATE TABLE `BDII2017`.`Endereco` (
-  `codigoEndereco` INT NOT NULL AUTO_INCREMENT,
-  `rua` VARCHAR(100) NULL,
-  `numero` INT NULL,
-  `complemento` VARCHAR(100) NULL,
-  `bairro` VARCHAR(100) NULL,
-  `cidade` VARCHAR(100) NULL,
-  `estado` VARCHAR(100) NULL,
-  `cep` VARCHAR(100) NULL,
-  PRIMARY KEY (`codigoEndereco`));
+CREATE TABLE `Endereco` (
+    `codigoEndereco` INT NOT NULL AUTO_INCREMENT,
+    `rua` VARCHAR(100) NULL,
+    `numero` INT NULL,
+    `complemento` VARCHAR(100) NULL,
+    `bairro` VARCHAR(100) NULL,
+    `cidade` VARCHAR(100) NULL,
+    `estado` VARCHAR(100) NULL,
+    `cep` VARCHAR(100) NULL,
+    PRIMARY KEY (`codigoEndereco`)
+);
 
 CREATE TABLE `BDII2017`.`Telefone` (
   `codigoTelefone` INT NOT NULL AUTO_INCREMENT,
