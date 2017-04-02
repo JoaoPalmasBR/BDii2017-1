@@ -26,6 +26,7 @@ import javax.swing.JOptionPane;
  * @author Joao Antonio
  */
 public class CadastrarLeitor extends javax.swing.JInternalFrame {
+    int codigoProximoLeitor = leitores.size()+1;
     public CadastrarLeitor() {
         initComponents();
         update.getLeitores();
@@ -344,6 +345,7 @@ public class CadastrarLeitor extends javax.swing.JInternalFrame {
         telefone.setTelResidencial(tfResidencial.getText());
         telefone.setTelComercial(tfComercial.getText());
         
+        leitor.setCodigoLeitor(codigoProximoLeitor);
         leitor.setNomeLeitor(tfNomeLeitor.getText());
         leitor.setCPFLeitor(tfCEP.getText());
         leitor.setEmailLeitor(tfEmailLeitor.getText());
