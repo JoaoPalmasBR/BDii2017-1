@@ -1,4 +1,4 @@
-# BDii2017-1
+# BIBLIOTECA COMPARTILHADA
 GitHub: http://github.com/jsantos737/BDii2017-1
 
 # Sistema de Gerenciamento da 'BIBLIOTECA COMPARTILHADA' com JAVA, BANCO DE DADOS, ORIENTACAO A OBJETOS.
