@@ -1,16 +1,27 @@
 # BDii2017-1
 GitHub: http://github.com/jsantos737/BDii2017-1
 
-# Sistema de Gerenciamento de Clientes e Funcionarios com Banco de Dados
+# Sistema de Gerenciamento da 'BIBLIOTECA COMPARTILHADA' com JAVA, BANCO DE DADOS, ORIENTACAO A OBJETOS.
+Inicio do Projeto: 10 de fevereiro de 2017.
 
- - Ana Clara Macedo
+Materia: Banco de Dados II.
+
+Orientador: Prof. Me. Fernando Luiz de Oliveira.
+
+
+INTEGRANTES:
+ - ANA CLARA DA CONCEIÇÃO MACÊDO DA SILVA
  
- - Gustavo Siqueira
+ - GUSTAVO SILVA ALENCAR SIQUEIRA
  
- - Joao Antonio dos Santos Ilario
+ - JOÃO ANTONIO DOS SANTOS ILÁRIO
  
+ - RODRIGO VASCONCELOS FIGUEIREDO
+
+
  Recursos:
   - JAVA (https://www.java.com/pt_BR/download/manual.jsp)
   - NETBEANS IDE (https://netbeans.org/downloads/)
   - MYSQL Connector Java (https://dev.mysql.com/downloads/connector/j/)
   - GitHub (https://github.com/)
+  
