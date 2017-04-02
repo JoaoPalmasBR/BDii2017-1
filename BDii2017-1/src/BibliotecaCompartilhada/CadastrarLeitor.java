@@ -17,6 +17,7 @@ package BibliotecaCompartilhada;
 import static BibliotecaCompartilhada.Biblioteca.enderecos;
 import static BibliotecaCompartilhada.Biblioteca.leitores;
 import static BibliotecaCompartilhada.Biblioteca.telefones;
+import static BibliotecaCompartilhada.Biblioteca.update;
 import javax.swing.JOptionPane;
 
 
@@ -27,6 +28,7 @@ import javax.swing.JOptionPane;
 public class CadastrarLeitor extends javax.swing.JInternalFrame {
     public CadastrarLeitor() {
         initComponents();
+        update.getLeitores();
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents

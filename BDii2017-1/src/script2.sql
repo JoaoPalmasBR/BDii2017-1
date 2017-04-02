@@ -12,18 +12,18 @@ CREATE TABLE `Endereco` (
 
 CREATE TABLE `Telefone` (
     `codigoTelefone` INT NOT NULL AUTO_INCREMENT,
-    `telCelular` VARCHAR(45) NULL,
-    `telResidencial` VARCHAR(45) NULL,
-    `telComercial` VARCHAR(45) NULL,
+    `telCelular` VARCHAR(100) NULL,
+    `telResidencial` VARCHAR(100) NULL,
+    `telComercial` VARCHAR(100) NULL,
     PRIMARY KEY (`codigoTelefone`)
 );
 
 CREATE TABLE `Leitor` (
     `codigoLeitor` INT NOT NULL AUTO_INCREMENT,
-    `nomeLeitor` VARCHAR(45) NULL,
-    `CPFLeitor` VARCHAR(45) NULL,
-    `emailLeitor` VARCHAR(45) NULL,
-    `interesseLeitor` VARCHAR(45) NULL,
+    `nomeLeitor` VARCHAR(100) NULL,
+    `CPFLeitor` VARCHAR(100) NULL,
+    `emailLeitor` VARCHAR(100) NULL,
+    `interesseLeitor` VARCHAR(100) NULL,
     `enderecoLeitor` INT NULL,
     `telefoneLeitor` INT NULL,
     PRIMARY KEY (`codigoLeitor`),

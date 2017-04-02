@@ -49,4 +49,22 @@ public class LeitorDao {
             throw new RuntimeException(e);
         }
     }
+    public void remover(Leitor leitor){
+        String sql = "delete from Leitor where CPFLeitor = ?;"
+                + "delete from Telefone where codigoTelefone = ?;"
+                + "delete from Endereco where codigoEndereco = ?;";
+        try (
+            // prepared statement para inserção
+            PreparedStatement stmt = connection.prepareStatement(sql)) {
+            // seta os valores
+            stmt.setString(1,leitor.getCPFLeitor());
+            stmt.setInt(2,leitor.getTelefoneLeitor().getCodigoTelefone());
+            stmt.setInt(3,leitor.getEnderecoLeitor().getCodigoEndereco());
+            // executa
+            stmt.execute();
+        }
+        catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

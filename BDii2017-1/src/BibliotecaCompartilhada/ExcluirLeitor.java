@@ -2,6 +2,7 @@ package BibliotecaCompartilhada;
 
 import static BibliotecaCompartilhada.Biblioteca.leitores;
 import static BibliotecaCompartilhada.Biblioteca.update;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 /**
@@ -116,6 +117,10 @@ public class ExcluirLeitor extends javax.swing.JInternalFrame {
         Leitor leitor = leitores.get(jTable1.getSelectedRow());
         leitores.remove(leitor);
         
+        LeitorDao dao = new LeitorDao();
+        // método elegante
+        dao.remover(leitor);
+        JOptionPane.showMessageDialog(rootPane,"Leitor Excluido!");
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
