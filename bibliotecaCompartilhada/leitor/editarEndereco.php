@@ -26,7 +26,7 @@
     <center><h3>Editar</h3></center>
         <form action='editarEndereco1.php' method='Post'>
             <label>Codigo:</label>
-                <input type="text" name="codigoEndereco" id="codigoEndereco" value="<?php echo($_POST['codigoEndereco']) ?>" disabled>
+                <input type="text" name="codigoEndereco" id="codigoEndereco" value="<?php echo($_POST['codigoEndereco']) ?>">
                 <br>
             <label>Rua:</label>
                 <input type='text' name='rua' id='rua'>

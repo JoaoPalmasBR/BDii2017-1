@@ -26,7 +26,7 @@
     <center><h3>Editar</h3></center>
         <form action='editarLeitor1.php' method='Post'>
             <label>Codigo:</label>
-                <input type="text" name="codigoLeitor" id="codigoLeitor" value="<?php echo($_POST['codigoLeitor']) ?>" disabled>
+                <input type="text" name="codigoLeitor" id="codigoLeitor" value="<?php echo($codLeitor); ?>">
                 <br>
             <label>Nome:</label>
                 <input type='text' name='nomeLeitor' id='nomeLeitor'>

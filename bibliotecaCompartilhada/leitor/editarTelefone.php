@@ -26,7 +26,7 @@
     <center><h3>Editar</h3></center>
         <form action='editarTelefone1.php' method='Post'>
             <label>Codigo:</label>
-                <input type="text" name="codigoTelefone" id="codigoTelefone" value="<?php echo($_POST['codigoTelefone']) ?>" disabled>
+                <input type="text" name="codigoTelefone" id="codigoTelefone" value="<?php echo($_POST['codigoTelefone']) ?>">
                 <br>
             <label>Telefone Celular:</label>
                 <input type='text' name='telCelular' id='telCelular'>
