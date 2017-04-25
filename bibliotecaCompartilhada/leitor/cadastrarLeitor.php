@@ -5,3 +5,4 @@
 	$mysqli1 = new mysqli('localhost', 'joao', 'joao', 'biblioteca');
 	$result1 = $mysqli1->query($query1);
 ?>
+<script type="text/javascript">javascript:history.back(1)</script>

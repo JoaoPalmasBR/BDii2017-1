@@ -1,6 +1,4 @@
 <?php
-    $statusBD= "online";
-	
     class Leitor {
 		public $codigoLeitor;
     	public $nomeLeitor;
